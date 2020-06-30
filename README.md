@@ -21,7 +21,7 @@ MongoDB commands:
 ----------------
 1. to create database use "use" command as shown below
 
-        user <database-name>
+        use <database-name>
         eg: use hockey
 
   it first checks whether hockey database is avaialble or not. If it is available it switches to hockey database or it will create hockey database and switch to it.
@@ -109,10 +109,10 @@ MongoDB commands:
   To specify or condition, we can use $or as shown below
 
       eg:	db.players.find(
-	        $or: [
-	          "position": "Left wing",
-		        "position": "Right wing"
-	        ]
+	        	$or: [
+	          		"position": "Left wing",
+		        	"position": "Right wing"
+	        	]
 	        )
 	
 	this will give documents whose position is either left wing or right wing
